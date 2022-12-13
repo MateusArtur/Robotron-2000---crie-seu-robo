@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <title>Robotron 2000</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body class="gradienteFundo">
+    <main>
+        <section class="robotron">
+            <!--<section class="botoes"> Botões em teste
+                <button class="alterar " data-cor="branco">Robotron Branco</button>
+                <button class="alterar" data-cor="preto">Robotron Preto</button>
+                <button class="alterar" data-cor="vermelho">Robotron Vermelho</button>
+            </section>       
+            <img class="robo" src="img/Robotron 2000 - Branco/Robotron 2000 - Branco.png" alt="Robotron" id="robotron" >-->
+
+            <div id="carousel-robo" class="carousel slide" ><!--Carousel -->
+                <div class="carousel-inner"><!--Inner -->
+                  <div class="carousel-item active">
+                    <img class="robo" src="img/Robotron 2000 - Branco/Robotron 2000 - Branco.png" alt="Robotron" id="robotron" >
+                    <button class="botao-seleciona-cor">Selecionar Branco</button>
+                  </div>
+        
+                  <div class="carousel-item">
+                    <img class="robo" src="img/Robotron 2000 - Vermelho/Robotron 2000 - Vermelho.png" alt="Robotron" id="robotron">
+                    <button class="botao-seleciona-cor">Selecionar Vermelho</button>
+                  </div>
+
+                  <div class="carousel-item ">
+                    <img class="robo" src="img/Robotron 2000 - Preto/Robotron 2000 - Preto.png" alt="Robotron" id="robotron" >
+                    <button class="botao-seleciona-cor">Selecionar Preto</button>
+                  </div>
+
+                  <div class="carousel-item ">
+                    <img class="robo" src="img/Robotron 2000 - Amarelo/Robotron 2000 - Amarelo.png" alt="Robotron" id="robotron" >
+                    <button class="botao-seleciona-cor">Selecionar Amarelo</button>
+                  </div>
+        
+                </div><!--/Inner -->
+        
+                <!-- Controles -->
+                <button href="#carousel-robo" class="carousel-control-prev" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+        
+                <button href="#carousel-robo" class="carousel-control-next" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+        
+              </div><!--/Carousel -->
+
+            <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
+        </section>
+
+        <section class="box estatisticas">
+            <div class="estatistica">
+                <p class="estatistica-titulo">Força</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="forca">200</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Poder</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="poder">200</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Energia</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="energia">200</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Velocidade</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="velocidade">200</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipamentos">
+            <form action="" class="montador">
+                <div class="box montador-conteudo">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Braços</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="bracos">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="bracos">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Blindagem</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="blindagem">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="blindagem">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Núcleos</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="nucleos">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="nucleos">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Pernas</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste"data-controle="-" data-peca="pernas">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="pernas">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Foguetes</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="foguetes">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="foguetes">+</buttom>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Iniciar produção" class="producao" id="producao">
+            </form>
+        </section>
+    </main>
+
+    
+    <script src="Js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
